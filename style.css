@@ -22,14 +22,15 @@ body{
     margin-bottom: 50px;
     position: relative;
     border: 2px solid white;
+    z-index: 1;
 }
 #contour{
-    width: 75px;
-    height: 75px;
+    width: 65px;
+    height: 65px;
     border-radius: 250px;
     position: absolute;
-    border: 1px solid red;
-    background-color: grey;
+    border: 1px solid white;
+    /* background-color: grey; */
     top: 180px;
     left: 170px;
     display: flex;
@@ -39,9 +40,11 @@ body{
 #cadredate{
     width: 95%;
     height: 30px;
-    /* background-color: black;   */
+    /* background-color: black;  */
+    color: white!important; 
+    font-size: 0.8em;
     position: absolute;
-    top: 35%;
+    top: 30%;
     color: black;
     display: flex;
     justify-content: center;
@@ -60,34 +63,58 @@ body{
 #start{
     width: 4px;
     height: 10px;
-    border: 2px solid white;
+    border: 2px solid transparent;
+    color: white;
     position: absolute;
+    padding-top: 5px;
     top: 0px;
     left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #quarter{
     width: 10px;
     height: 4px;
-    border: 2px solid white;
+    border: 2px solid transparent;
+    color: white;
+    padding-right: 5px;
     position: absolute;
     top: 50%;
     right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #middle{
     width: 4px;
     height: 10px;
-    border: 2px solid white;
+    border: 2px solid transparent;
+    color: white;
     position: absolute;
+    padding-bottom: 5px;
     bottom: 0px;
     left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #quarterto{
     width: 10px;
     height: 4px;
-    border: 2px solid white;
+    border: 2px solid transparent;
+    color: white;
+    padding-left: 5px;
     position: absolute;
     top: 50%;
     left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #cadredate2{
     width: 180px;
@@ -106,4 +133,38 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#aiguilleheure{
+position: absolute;
+top: 150px;
+left: 150px;
+width: 5px;
+height: 80px;
+border-radius: 5px;
+background-color: black;
+border: 1px solid white;
+z-index: 4;
+}
+#aiguilleminute{
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    width: 120px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: black;
+    border: 1px solid white;
+    z-index: 3;
+}
+#aiguilleseconde{
+    position: absolute;
+    top: 135px;
+    left: 110px;
+    width: 2px;
+    transform: rotate(45deg);
+    height: 120px;
+    border-radius: 5px;
+    background-color: red;
+    z-index: 2;
 }
